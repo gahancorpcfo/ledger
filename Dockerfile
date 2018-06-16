@@ -1,4 +1,4 @@
-FROM python:3-alpine3.7
+FROM alpine:latest 
 RUN apk update
 RUN apk add bash alpine-sdk cmake gmp-dev boost-dev mpfr-dev ncurses
 RUN mkdir /opt
