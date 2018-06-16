@@ -7,6 +7,9 @@ jobs:
     steps:
       - checkout
       - run:
+          command: apt-get -y update
+          command: apt-get -y install docker
+      - run:
           name: Build the image. 
           command: docker build -t ledger .
       - run:
