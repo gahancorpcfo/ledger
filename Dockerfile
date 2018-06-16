@@ -1,6 +1,5 @@
-FROM ubuntu:latest 
-RUN apt-get -y update 
-RUN apt-get -y install bash build-essential cmake libgmp-dev libboost-dev libmpfr-dev libncurses5-dev libncursesw5-dev git python
+FROM centos:latest 
+RUN yum -y install bash build-essential cmake libgmp-devel libboost-devel libmpfr-devel libncurses5-devel libncursesw5-devel git python automake autoconf make
 WORKDIR /opt
 RUN git clone https://github.com/ledger/ledger
 WORKDIR /opt/ledger
