@@ -1,0 +1,15 @@
+---
+version: 2
+jobs:
+  build:
+    docker:
+      - image: python:alpine3.7
+    steps:
+      - checkout
+      - run:
+          name: Build the image. 
+          command: docker build -t ledger .
+      - run:
+          name: Verify ledger.
+          command: docker run ledger ledger -v
+...
