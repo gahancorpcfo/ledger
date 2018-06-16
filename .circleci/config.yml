@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Install Docker.
-          command: apt-get -y update; apt-get -y install docker
+          command: sudo apt-get -y update; sudo apt-get -y install docker
       - run:
           name: Build the image. 
           command: docker build -t ledger .
