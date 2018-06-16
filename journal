@@ -1,0 +1,15 @@
+2018-06-15 ! (debit) Amazon.com
+  ; memo: Anything but books.
+  Expenses:Household:Amazon.com     $35.00
+  Assets:Checking:BankOne
+
+2018-06-16 * (debit) Wal-Mart
+  ; memo: Something from China.
+  Expenses:Household:Wal-Mart     $85.00
+  Assets:Checking:BankTwo
+
+2018-06-16 * (credit) Paycheck
+  ; memo: You passed Go, collect $200.00.
+  Income:Salary:Monopoly        -$200
+  Assets:Checking:BankOne       $100
+  Assets:Checking:BankTwo       $100

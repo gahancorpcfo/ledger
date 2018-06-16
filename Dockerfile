@@ -10,4 +10,6 @@ RUN make install
 WORKDIR /root
 ADD bashrc /root/.bashrc
 ADD git-completion.bash /root/.git-completion.bash
+ADD ledgerrc /root/.ledgerrc
+ADD journal /root/journal
 VOLUME /var/ledger
