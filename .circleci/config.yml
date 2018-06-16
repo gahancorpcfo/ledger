@@ -12,5 +12,5 @@ jobs:
           command: docker build -t ledger .
       - run:
           name: Verify ledger.
-          command: docker run ledger ledger -v
+          command: docker run ledger:latest ledger -v
 ...

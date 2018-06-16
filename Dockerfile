@@ -9,3 +9,4 @@ RUN ./acprep update
 RUN make install
 WORKDIR /root
 ADD bashrc /root/.bashrc
+VOLUME /var/ledger
