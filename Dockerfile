@@ -9,4 +9,5 @@ RUN ./acprep update
 RUN make install
 WORKDIR /root
 ADD bashrc /root/.bashrc
+ADD git-completion.bash /root/.git-completion.bash
 VOLUME /var/ledger
