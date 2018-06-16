@@ -6,3 +6,6 @@ WORKDIR /opt
 RUN git clone https://github.com/ledger/ledger
 WORKDIR /opt/ledger
 RUN ./acprep update
+RUN make install
+WORKDIR /root
+ADD bashrc /root/.bashrc
