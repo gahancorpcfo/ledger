@@ -1,6 +1,6 @@
 FROM ubuntu:latest 
 RUN apt-get -y update 
-RUN apt-get -y install bash build-essential cmake libgmp-dev libboost-dev libmpfr-dev libncurses5-dev libncursesw5-dev git 
+RUN apt-get -y install bash build-essential cmake libgmp-dev libboost-dev libmpfr-dev libncurses5-dev libncursesw5-dev git python
 WORKDIR /opt
 RUN git clone https://github.com/ledger/ledger
 WORKDIR /opt/ledger
