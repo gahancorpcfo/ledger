@@ -1,5 +1,6 @@
 FROM centos:latest 
-RUN yum -y install bash build-essential cmake libgmp-devel libboost-devel libmpfr-devel libncurses5-devel libncursesw5-devel git python automake autoconf make
+RUN yum -y groupinstall 'Development Tools' 
+RUN yum -y install cmake boost boost-devel
 WORKDIR /opt
 RUN git clone https://github.com/ledger/ledger
 WORKDIR /opt/ledger
