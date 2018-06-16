@@ -1,6 +1,6 @@
-FROM alpine:latest 
-RUN apk update
-RUN apk add bash alpine-sdk cmake gmp-dev boost-dev mpfr-dev ncurses
+FROM ubuntu:latest 
+RUN apt-get -y update 
+RUN apt-get -y install bash build-essential cmake libgmp-dev libboost-dev libmpfr-dev libncurses5-dev libncursesw5-dev 
 RUN mkdir /opt
 WORKDIR /opt
 RUN git clone https://github.com/ledger/ledger
