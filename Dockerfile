@@ -1,6 +1,7 @@
 FROM centos:latest 
 RUN yum -y groupinstall 'Development Tools' 
-RUN yum -y install cmake boost boost-devel libgmp3-devel libmpfr-devel
+RUN yum -y install cmake boost boost-devel
+RUN yum -y install gmp-devel mpfr-devel
 WORKDIR /opt
 RUN git clone https://github.com/ledger/ledger
 WORKDIR /opt/ledger
